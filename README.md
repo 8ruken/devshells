@@ -7,6 +7,6 @@
 rust の環境のセットアップ方法
 
 ```
-
+nix develop .#rust
 ```
 
