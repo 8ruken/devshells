@@ -6,9 +6,26 @@
 
 Nix のインストール方法(WSL)
 
+### systemd の有効化
+
+systemd を有効化します。
+
+```
+sudo cat << '_EOF_' >>
+[boot]
+systemd=true
+_EOF_
+```
+
+### Nix のインストール
+
+nix をインストールします。
+
 ```
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
   sh -s -- install
+
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 ```
 
 公式インストーラーでインストールすると Nix Flakes がデフォルトで有効化されていないので
