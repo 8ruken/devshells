@@ -7,8 +7,11 @@
 Nix のインストール方法(WSL)
 
 ```
-sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --no-daemon
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install
 ```
+
+公式インストーラーでインストールすると Nix Flakes がデフォルトで有効化されていないので
+[nix-installer](https://github.com/DeterminateSystems/nix-installer) を使用します。
 
 ## Rust
 
