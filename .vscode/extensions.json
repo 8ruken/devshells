@@ -36,6 +36,7 @@
         "twxs.cmake",
         "unifiedjs.vscode-mdx",
         "yzhang.markdown-all-in-one",
-        "EditorConfig.EditorConfig"
+        "EditorConfig.EditorConfig",
+        "rust-lang.rust-analyzer"
     ]
 }
